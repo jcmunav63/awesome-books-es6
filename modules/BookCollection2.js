@@ -1,16 +1,18 @@
-import { Book } from './Book.js';
-// import removeBook from './removeBook.js';
+/* eslint-disable no-use-before-define */
+import Book from './Book.js';
 
-export class BookCollection2 {
+export default class BookCollection2 {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
     this.displayedBooks = document.getElementById('displayedBooks');
     const addBtn = document.getElementById('addBtn');
-    // this.currentIndex = 0;
 
     addBtn.addEventListener('click', () => {
       const title = document.getElementById('title').value;
       const author = document.getElementById('author').value;
+      const section2 = document.getElementById('section2');
+      const section3 = document.getElementById('section2');
+      const section4 = document.getElementById('section2');
       this.addBook(title, author);
       section2.style.display = 'block';
       section3.style.display = 'none';
@@ -18,36 +20,31 @@ export class BookCollection2 {
       const formElement = document.getElementById('form');
       formElement.reset();
     });
-
-    this.displayBooks();
+    /* eslint-disable no-use-before-define */
+    // this.displayBooks();
   }
 
   displayBooks() {
     displayedBooks.innerHTML = '';
     let i = 0;
-
     this.books.forEach((book, index) => {
       const div = document.createElement('div');
       div.innerHTML = `
         <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;
         <button class="removeBtn">Remove</button></p>
       `;
-
       const removeBtn = div.querySelector('.removeBtn');
       removeBtn.addEventListener('click', () => {
         this.removeBook(book);
         div.remove();
       });
-
       div.classList.add('div1');
       if (i % 2 === 0) {
         div.style.backgroundColor = '#e4e2e2';
       } else {
         div.style.backgroundColor = 'white';
       }
-
       div.dataset.index = index;
-
       i += 1;
       this.displayedBooks.appendChild(div);
     });
