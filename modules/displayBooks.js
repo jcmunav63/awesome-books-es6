@@ -1,5 +1,7 @@
-export displayBooks() {
-  import {removeBook} from './removeBook';
+import { removeBook(book) } from './removeBook.js';
+
+export function displayBooks() {
+  
   this.displayedBooks.innerHTML = '';
   let i = 0;
 
