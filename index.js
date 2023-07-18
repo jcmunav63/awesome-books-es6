@@ -1,5 +1,6 @@
 /* eslint-disable no-use-before-define */
 import BookCollection2 from './modules/BookCollection2.js';
+import { DateTime } from './node_modules/luxon.js';
 
 const addBooks = document.getElementById('addBooks');
 const contact = document.getElementById('contact');
@@ -30,7 +31,10 @@ bookCollection1.displayBooks();
 
 function updateDateTime() {
   /* eslint-disable no-use-before-define */
-  const { DateTime } = luxon;
+  // const { DateTime } = luxon;
+  // const luxon = require('luxon');
+  // window.DateTime = luxon.DateTime;
+
   const currentDateTime = DateTime.now();
   const formatDateTime = currentDateTime.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
   const currentDateTime2 = `${formatDateTime}`;

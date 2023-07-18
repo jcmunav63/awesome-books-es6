@@ -25,6 +25,7 @@ export default class BookCollection2 {
   }
 
   displayBooks() {
+    const displayedBooks = document.getElementById('displayedBooks');
     displayedBooks.innerHTML = '';
     let i = 0;
     this.books.forEach((book, index) => {
