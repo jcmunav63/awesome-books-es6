@@ -1,4 +1,5 @@
 import { Book } from './Book.js';
+import { removeBook } from './removeBook.js';
 
 export class BookCollection2 {
   constructor() {

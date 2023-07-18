@@ -1,4 +1,4 @@
-import {Book} from './Book.js';
+import { Book } from './Book.js';
 
 export function addBook(title, author) {
   const newBook = new Book(title, author);
