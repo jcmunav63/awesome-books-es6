@@ -1,4 +1,5 @@
 import { Book } from './Book.js';
+
 export class BookCollection2 {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('books')) || [];

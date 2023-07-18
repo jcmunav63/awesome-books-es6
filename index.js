@@ -1,4 +1,4 @@
-import { DateTime } from "./modules/luxon-min.js";
+import { DateTime } from './modules/luxon-min.js';
 import { BookCollection2 } from './modules/BookCollection2.js';
 
 // eslint-disable-next-line no-unused-vars
@@ -34,7 +34,7 @@ contact.addEventListener('click', (event) => {
 // eslint-disable-next-line no-unused-vars
 const bookCollection1 = new BookCollection2();
 // eslint-disable-next-line no-unused-vars
-let length = bookCollection1.length;
+const { length } = bookCollection1;
 
 function updateDateTime() {
   const currentDateTime = DateTime.now();
