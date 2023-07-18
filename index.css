@@ -74,14 +74,17 @@ section {
   height: 32px;
 }
 
+button {
+  padding: 3px;
+}
+
 .removeBtn {
   text-align: right;
   position: absolute;
   right: 30px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 3;
   border: 0;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
 }

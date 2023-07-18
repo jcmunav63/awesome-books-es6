@@ -1,14 +1,14 @@
 import { Book } from './Book.js';
-import { removeBook } from './removeBook.js';
+// import removeBook from './removeBook.js';
 
 export class BookCollection2 {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
     this.displayedBooks = document.getElementById('displayedBooks');
-    this.addBtn = document.getElementById('addBtn');
-    this.currentIndex = 0;
+    const addBtn = document.getElementById('addBtn');
+    // this.currentIndex = 0;
 
-    this.addBtn.addEventListener('click', () => {
+    addBtn.addEventListener('click', () => {
       const title = document.getElementById('title').value;
       const author = document.getElementById('author').value;
       this.addBook(title, author);
@@ -23,7 +23,7 @@ export class BookCollection2 {
   }
 
   displayBooks() {
-    this.displayedBooks.innerHTML = '';
+    displayedBooks.innerHTML = '';
     let i = 0;
 
     this.books.forEach((book, index) => {
