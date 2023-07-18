@@ -29,7 +29,8 @@ export class BookCollection2 {
     this.books.forEach((book, index) => {
       const div = document.createElement('div');
       div.innerHTML = `
-        <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button></p>
+        <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;
+        <button class="removeBtn">Remove</button></p>
       `;
 
       const removeBtn = div.querySelector('.removeBtn');

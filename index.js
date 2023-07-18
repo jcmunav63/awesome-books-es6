@@ -1,4 +1,4 @@
-import { DateTime } from './modules/luxon-min.js';
+// import { DateTime } from './modules/luxon-min.js';
 import { BookCollection2 } from './modules/BookCollection2.js';
 
 // eslint-disable-next-line no-unused-vars
@@ -33,14 +33,14 @@ contact.addEventListener('click', (event) => {
 
 // eslint-disable-next-line no-unused-vars
 const bookCollection1 = new BookCollection2();
-console.log(bookCollection1);
+//console.log(bookCollection1);
 // eslint-disable-next-line no-unused-vars
 // const length = bookCollection1.books.length();
 // length -= 1;
 
 function updateDateTime() {
-  const currentDateTime = DateTime.now();
-  const formattedDateTime = currentDateTime.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+  const currentDateTime = luxon.DateTime.now();
+  const formattedDateTime = currentDateTime.toLocaleString(luxon.DateTime.DATETIME_MED_WITH_SECONDS);
   const currentDateTime2 = `${formattedDateTime}`;
   const datetimeElement = document.getElementById('datetime');
   datetimeElement.textContent = currentDateTime2.toLocaleString();

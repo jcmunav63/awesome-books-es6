@@ -1,4 +1,4 @@
-import { removeBook(book) } from './removeBook.js';
+// import { removeBook } from './removeBook.js';
 
 export function displayBooks() {
   
@@ -8,7 +8,8 @@ export function displayBooks() {
   this.books.forEach((book, index) => {
     const div = document.createElement('div');
     div.innerHTML = `
-      <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button><p>
+      <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;
+      <button class="removeBtn">Remove</button><p>
       <hr>
     `;
 
