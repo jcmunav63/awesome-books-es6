@@ -15,7 +15,7 @@ export class BookCollection2 {
       section2.style.display = 'block';
       section3.style.display = 'none';
       section4.style.display = 'none';
-      const formElement = documentgetElementById('form');
+      const formElement = document.getElementById('form');
       formElement.reset();
     });
 
