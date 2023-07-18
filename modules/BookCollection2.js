@@ -13,8 +13,8 @@ export class BookCollection2 {
       section2.style.display = 'block';
       section3.style.display = 'none';
       section4.style.display = 'none';
-      // title.value = '';
-      // author.value = '';
+      const formElement = documentgetElementById('form');
+      formElement.reset();
     });
 
     this.displayBooks();
@@ -27,8 +27,7 @@ export class BookCollection2 {
     this.books.forEach((book, index) => {
       const div = document.createElement('div');
       div.innerHTML = `
-        <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button><p>
-        <hr>
+        <p>"${book.title}"&nbsp;by&nbsp;${book.author}&nbsp;<button class="removeBtn">Remove</button></p>
       `;
 
       const removeBtn = div.querySelector('.removeBtn');
