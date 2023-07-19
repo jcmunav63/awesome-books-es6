@@ -1,5 +1,3 @@
-// import { removeBook } from './removeBook.js';
-
 export default function displayBooks() {
   this.displayedBooks.innerHTML = '';
   let i = 0;

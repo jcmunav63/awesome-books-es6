@@ -20,8 +20,6 @@ export default class BookCollection2 {
       const formElement = document.getElementById('form');
       formElement.reset();
     });
-    /* eslint-disable no-use-before-define */
-    // this.displayBooks();
   }
 
   displayBooks() {

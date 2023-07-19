@@ -1,6 +1,6 @@
-/* eslint-disable no-use-before-define */
 import BookCollection2 from './modules/BookCollection2.js';
-import { DateTime } from './node_modules/luxon.js';
+/* global luxon */
+const luxonDateTime = luxon.DateTime;
 
 const addBooks = document.getElementById('addBooks');
 const contact = document.getElementById('contact');
@@ -25,18 +25,12 @@ contact.addEventListener('click', (event) => {
   heading.style.display = 'none';
 });
 
-// eslint-disable-next-line no-unused-vars
 const bookCollection1 = new BookCollection2();
 bookCollection1.displayBooks();
 
 function updateDateTime() {
-  /* eslint-disable no-use-before-define */
-  // const { DateTime } = luxon;
-  // const luxon = require('luxon');
-  // window.DateTime = luxon.DateTime;
-
-  const currentDateTime = DateTime.now();
-  const formatDateTime = currentDateTime.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+  const currentDateTime = luxonDateTime.now();
+  const formatDateTime = currentDateTime.toLocaleString(luxonDateTime.DATETIME_MED_WITH_SECONDS);
   const currentDateTime2 = `${formatDateTime}`;
   const datetimeElement = document.getElementById('datetime');
   datetimeElement.textContent = currentDateTime2.toLocaleString();
