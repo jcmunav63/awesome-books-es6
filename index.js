@@ -1,4 +1,5 @@
 import BookCollection2 from './modules/BookCollection2.js';
+// import { DateTime } from './node_modules/luxon.js'
 /* global luxon */
 const luxonDateTime = luxon.DateTime;
 
@@ -28,12 +29,13 @@ contact.addEventListener('click', (event) => {
 const bookCollection1 = new BookCollection2();
 bookCollection1.displayBooks();
 
-function updateDateTime() {
+const updateDateTime = () => {
   const currentDateTime = luxonDateTime.now();
   const formatDateTime = currentDateTime.toLocaleString(luxonDateTime.DATETIME_MED_WITH_SECONDS);
   const currentDateTime2 = `${formatDateTime}`;
   const datetimeElement = document.getElementById('datetime');
   datetimeElement.textContent = currentDateTime2.toLocaleString();
-}
+};
+
 setInterval(updateDateTime, 1000);
 updateDateTime();
