@@ -1,5 +1,5 @@
 /* global displayBooks */
-export default const displayBooks = () => {
+export const displayBooks = () => {
   this.displayedBooks.innerHTML = '';
   let i = 0;
 
