@@ -1,5 +1,5 @@
-/* global displayBooks */
-export const displayBooks = () => {
+/* eslint-disable no-use-before-define */
+const displayBooks = () => {
   this.displayedBooks.innerHTML = '';
   let i = 0;
 
@@ -29,4 +29,6 @@ export const displayBooks = () => {
     i += 1;
     this.displayedBooks.appendChild(div);
   });
-}
+};
+
+export default displayBooks;
