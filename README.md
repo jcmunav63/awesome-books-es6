@@ -1,16 +1,16 @@
-# awesome-books-es6
-
 <div align="center">
 
-  <h1><b>Awesome Books</b></h1>
+  <h1><b>Awesome Books ES6</b></h1>
 
 </div>
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-  - [Key Features](#key-features)
+ [📖 About the Project](#about-project)
+  - [🛠️ Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -23,23 +23,40 @@
 - [⭐️ Show Your Support](#support)
 - [📝 License](#license)
 
+<!-- PROJECT DESCRIPTION -->
 # 📖 About the Project <a name="about-project"></a>
 
 Awesome Books is a website designed to display a list of books and enable users to add and remove books.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🛠 Built With <a name="built-with"></a>
 
-The project is built using the following technologies and tools:
+<!-- Tech Stack -->
+### Tech Stack <a name="tech-stack"></a>
 
+The project is built using the following technologies and tools:
 - HTML
 - CSS
-- JavaScript
+- JAVASCRIPT
+
+<!-- Key Features -->
+### Key Features <a name="key-features"></a>
+
+- **Good HTML, CSS & JS practices**
+- **A webpage with the use of linters**
+- **Dynamic behaviour using JavaScript**
+- **Data storage in the browser's local storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Live Demo <a name="live-demo"></a>
+
+🚀 Live Demo
+Link to our deployed project (project is not deployed yet).
+
+- https://
 
 # 💻 Getting Started <a name="getting-started"></a>
 
@@ -97,22 +114,20 @@ To deploy the  Awesome Books Website to a live server, follow these steps:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-The Awesome Books website offers the following key features:
-
-- **Waiting to be seen...**
+The Awesome Books website will offer the following features:
+- **No future features for now**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Nessrine88/Awesome.Books.github.io/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/jcmunav63/awesome-books-es6/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgements <a name="acknowledgements"></a>
 
-We would like to express our gratitude to Microverse online school and our coding partners.
+I would like to express my gratitude to Microverse online school and my coding partners.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,1 +1,62 @@
-<!-- HTML CODE HERE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Books</title>
+  <link rel="icon" type="image/png" href="/favicon-book.png">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <section id="navbar">
+    <div class="logo arial">Awesome Books</div>
+    <ul class="navlist">
+      <li><a class="noBorder arial" type= "button" href="" id="list">List</a></li>
+      <li><a href="" class="arial" id="addBooks">Add new</a></li>
+      <li><a href="" class="arial" id="contact">Contact</a></li>
+    </ul>
+  </section>
+
+  <p id="datetime" class="arial"></p>
+
+  <section id="heading">
+    <h1 class="arial">All Awesome Books</h1>
+  </section>
+  <section id="section2">
+    <div id="displayedBooks">
+    </div>
+  </section>
+
+  <section id="section3" class="hidden">
+    <form id="form">
+      <h3 class="titleAdd arial">Add a new book</h3>
+      <div class="divAdd arial">
+        <input id = "title" class="arial" type="text" placeholder="Title...">
+        <input id = "author" class="arial" type="text" placeholder="Author...">
+      </div>
+      <div class="divBtn">
+        <button id="addBtn" type="button" class="arial">Add</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="section4" class="hidden">
+    <h2 class="arial">Contact information</h2>
+    <div class="info">
+      <p class="para1 arial">Do you have any questions or you just want to say "Hello"?</p>
+      <p class="para1 arial">You can reach out to us!</p>
+      <ul class="list2">
+        <li class="arial">Our e-mail: mail@mail.com</li>
+        <li class="arial">Our phone number: 0043586534422</li>
+        <li class="arial">Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </div>
+  </section>
+  
+  <section id="footer">
+    <div class="copyright arial">Copyright</div>
+  </section>
+  <script type="module" src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.3.0/luxon.min.js"></script>
+</body>
+</html>
